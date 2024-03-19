@@ -1,6 +1,6 @@
 import Styles from './index.module.css';
 import logo from '../../assets/logo.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAppContext } from '../../context';
 import { useEffect } from 'react';
 

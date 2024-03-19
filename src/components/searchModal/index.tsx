@@ -3,7 +3,7 @@ import { ListMethod } from '../../method';
 import Styles from './index.module.css';
 import FormStyles from '../../pages/homepage/index.module.css';
 import CloseIcon from '../../assets/x.svg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 type SearchModalType = {
   isOpen: boolean,
