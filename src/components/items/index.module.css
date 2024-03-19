@@ -1,0 +1,48 @@
+.List_Container {
+  min-width: 310px;
+  min-height: 123px;
+  margin: 36px 15px 20px;
+  padding: 12px 12px 11px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.Info_Container {
+  display: flex;
+  gap: 12px;
+}
+
+.Text_Container {
+  width: 100%;
+}
+
+.Bottom_Info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.Artwork {
+  width: 100px;
+  height: 100px;
+}
+
+.Badge {
+  font-size: 10px;
+  min-width: 45px;
+  min-height: 20px;
+  padding: 4px 6px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #10b981;
+}
+
+.Price_Container {
+  display: flex;
+  gap: 6px;
+}
+
+.Price {
+  color: #f5b014;
+}

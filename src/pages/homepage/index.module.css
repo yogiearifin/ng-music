@@ -1,0 +1,44 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(153deg,#712bda, #a45deb);
+  color: white;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Form {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  min-width: 80%;
+}
+
+.Logo {
+  width: 11vh;
+  height: 13vh;
+}
+
+.Input {
+  border-radius: 20px;
+  border: none;
+  min-height: 38px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Button {
+  min-height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}

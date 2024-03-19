@@ -1,0 +1,9 @@
+h1, h3, p {
+  margin: 0;
+}
+
+input::placeholder {
+  text-align: center;
+  color: #64748b;
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+.Header {
+  width: 100vw;
+  padding: 18px 0;
+  box-shadow: 0 0 6px 0 rgba(148, 77, 230, 0.75);
+  background-image: linear-gradient(153deg,#712bda, #a45deb);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 35px 35px;
+}
+
+.Header img {
+  margin: 0 15px;
+}
+
+.List {
+  margin-top: 36px;
+}
+
+.Main {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Search_Result {
+  color: #7b34dd;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
