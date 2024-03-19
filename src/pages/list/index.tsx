@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { Loader } from '../../components/loader';
 import { ListMethod } from '../../method';
 import { SearchModal } from '../../components/searchModal';
+import { toggleScroll } from '../../helpers';
 
 export const List = () => {
   const { search: searchQuery, isLoading, items, isOpen, setIsOpen } = useAppContext();
@@ -25,7 +26,9 @@ export const List = () => {
       <header className={ Styles.Header }>
         <img src={ menu } alt='menu' />
         <Link to='/'> <img src={ ngmusic } alt='ng music' /></Link>
-        <img src={ search } alt='search' onClick={()=>setIsOpen(!isOpen)} />
+        <img src={ search } alt='search' onClick={()=>{
+          toggleScroll(isOpen)
+          setIsOpen(!isOpen)}} />
       </header>
       <main className={ Styles.Main }>
         <div className={ Styles.Search }>

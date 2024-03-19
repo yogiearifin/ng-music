@@ -4,6 +4,7 @@ import Styles from './index.module.css';
 import FormStyles from '../../pages/homepage/index.module.css';
 import CloseIcon from '../../assets/x.svg';
 import { useState } from 'react';
+import { toggleScroll } from '../../helpers';
 
 type SearchModalType = {
   isOpen: boolean,
@@ -20,11 +21,14 @@ export const SearchModal: React.FC<SearchModalType> = ({
   return (
     <>
       { isOpen ? <div className={ Styles.Modal_Container }>
-        <img onClick={ () => setIsOpen(!isOpen) } className={ Styles.Close_Icon } src={ CloseIcon } alt='close icon' />
+        <img onClick={ () => {
+          toggleScroll(isOpen)
+          setIsOpen(!isOpen)} } className={ Styles.Close_Icon } src={ CloseIcon } alt='close icon' />
         <form className={ Styles.Form } onSubmit={ (e) => {
           e.preventDefault();
           searchFunction(search);
           setIsOpen(false);
+          toggleScroll(isOpen)
           setSearchGlobal(search);
         } }>
           <p>Search</p>
